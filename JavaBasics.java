@@ -40,6 +40,9 @@ public class JavaBasics {
         double result = (f *b ) + (i % c) - (d *s);
 
         System.out.println(result);
+
+        int $ = 24; 
+        System.out.println($);
          
     }    
 }
