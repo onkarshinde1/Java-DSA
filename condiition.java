@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class loop {
+public class condiition {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
