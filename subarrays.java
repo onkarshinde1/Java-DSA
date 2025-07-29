@@ -5,11 +5,14 @@ public class subarrays {
             int start = i;
             for (int j = i; j < arr.length; j++) {
                 int end = j;
+                int sum = 0;
                 for (int k = start; k <= end; k++) {
                     System.out.print(arr[k] + " ," );
+                    sum = sum + arr[k];
                     tp++;
                 }
 
+                System.out.print("    => sum of array is  = " +sum);
                 System.out.println();
             }
             System.out.println();
