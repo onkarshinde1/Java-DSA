@@ -10,7 +10,7 @@ public class arrays {
 
     public static void main(String args[]) {
         int arr[] = { 44, 55, 66, 77, 88, 99, 33, 22, 11 };
-        int key = 333;
+        int key = 33;
         int index = checknum(arr, key);
         if (index == -1) {
             System.out.println("key not found");
