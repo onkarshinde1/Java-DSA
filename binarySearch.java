@@ -21,7 +21,7 @@ public class binarySearch {
 
     public static void main(String[] args) {
         int arr[] = { 11, 22, 33, 44, 55, 66, 77, 88, 99 };
-        int key = 776;
-        System.out.println("the element is found at index "+findElem(arr, key));
+        int key = 552;
+        System.out.println("the element is found at index "+ findElem(arr, key));
     }
 }
