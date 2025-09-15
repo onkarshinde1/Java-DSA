@@ -25,7 +25,7 @@ public class maxsubarrsum1 {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1, -2, 6, -1, 3 ,2};
+        int arr[] = { 1, -2, 6, -1, 3 ,2 ,4};
         pairs(arr);
     }
 }
