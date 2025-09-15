@@ -1,42 +1,39 @@
 public class maxsubarrsum {
+
     public static void pairs(int arr[]) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         int tp = 0;
-        int maxSum = Integer.MIN_VALUE;  // Initially the smallest possible value
-        int minSum = Integer.MAX_VALUE;  // Initially the largest possible value
-
         for (int i = 0; i < arr.length; i++) {
-            int start = i;
             for (int j = i; j < arr.length; j++) {
-                int end = j;
+
                 int sum = 0;
- 
-                for (int k = start; k <= end; k++) {
-                    System.out.print(arr[k] + " ,");
+                for (int k = i; k <= j; k++) {
                     sum = sum + arr[k];
-                }
+                    System.out.print(arr[k] + "  , ");
 
-                // Update max and min sums
-                if (sum > maxSum) {
-                    maxSum = sum;
                 }
-                if (sum < minSum) {
-                    minSum = sum;
+                System.out.print("the sum is =>  " + sum + " ");
+                if (min > sum) {
+                    min = sum;
                 }
-
-                System.out.print("    => sum of array is = " + sum);
+                if (max < sum) {
+                    max = sum;
+                }
                 tp++;
+
                 System.out.println();
             }
+
             System.out.println();
         }
-
-        System.out.println("Total pairs (subarrays): " + tp);
-        System.out.println("Maximum subarray sum: " + maxSum);
-        System.out.println("Minimum subarray sum: " + minSum);
+        System.out.println("tp = " + tp);
+        System.out.println("minimum is " + min);
+        System.out.println("maximum is " + max);
     }
 
-    public static void main(String args[]) {
-        int arr[] = { 1,-2,6,-1,3 };
+    public static void main(String[] args) {
+        int arr[] = { 2, 4, 6, 8, 10 };
         pairs(arr);
     }
 }
