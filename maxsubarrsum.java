@@ -1,5 +1,6 @@
 public class maxsubarrsum {
-
+// bruteforce tachnique
+// time complexity => O(n^3)
     public static void pairs(int arr[]) {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
