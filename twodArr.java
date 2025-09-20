@@ -3,19 +3,18 @@ import java.util.*;
 public class twodArr {
 
     // search method (void return)
-    public static void search(int matrix[][], int key) {
-        boolean found = false;
+    public static boolean search(int matrix[][], int key) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (matrix[i][j] == key) {
-                    System.out.println("Key found at (" + i + "," + j + ")");
-                    found = true;
+                    // System.out.println("Key found at (" + i + "," + j + ")");
+                    System.out.println("elem found");
+                    return true;
                 }
             }
         }
-        if (!found) {
-            System.out.println("Key not found!");
-        }
+        System.out.println("elem not found");
+        return false;
     }
 
     public static void main(String args[]) {
@@ -42,7 +41,7 @@ public class twodArr {
         }
 
         // search key
-        int key = 5;
+        int key = 45;
         search(matrix, key); // call method directly
     }
 }
