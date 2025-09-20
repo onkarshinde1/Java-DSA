@@ -1,9 +1,10 @@
 import java.util.*;
 
 public class twodArr {
-
+    
     // search method (void return)
     public static boolean search(int matrix[][], int key) {
+        
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (matrix[i][j] == key) {
@@ -32,13 +33,33 @@ public class twodArr {
         }
 
         // print matrix
-        System.out.println("Matrix is:");
+        System.out.print("Matrix is:");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
+
+        // finding largest and smallest   
+        int largest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
+
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (matrix[i][j] > largest) {
+                    largest = matrix[i][j];
+                }
+                if (matrix[i][j] < smallest) {
+                    smallest = matrix[i][j];
+                }
+            }
+        }
+
+        System.out.println("the largest num is "+ largest);
+        System.out.println("the smallest num is "+ smallest);
+        
 
         // search key
         int key = 45;
