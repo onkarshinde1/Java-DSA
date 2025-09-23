@@ -27,7 +27,7 @@ public class ShortestPath {
 
 
     public static void main(String[] args) {
-        String path ="WNEENESENNNNWWWESSN";
+        String path ="WNEENESENNN";
         System.out.println("the shortest path is "+ getShortestPath(path));
     }
 }
