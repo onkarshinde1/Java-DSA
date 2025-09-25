@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class firstUppercase {
 
     public static String toUpperCase(String str){
@@ -20,7 +22,9 @@ public class firstUppercase {
     }
 
     public static void main(String[] args) {
-        String str = "hi , i am onkar shinde";
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
         String result = toUpperCase(str);
         System.out.println(result);
     }
