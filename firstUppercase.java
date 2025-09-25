@@ -25,7 +25,9 @@ public class firstUppercase {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
 
-        String result = toUpperCase(str);
+        // String result = toUpperCase(str);
+        // System.out.println(result);
+        String result = str.toLowerCase();
         System.out.println(result);
     }
 }
