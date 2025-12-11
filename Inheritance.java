@@ -3,6 +3,10 @@ public class Inheritance {
     public static void main(String[] args) {
         Dog labo = new Dog();
         labo.eat();
+        labo.color();
+        labo.bark();
+
+        // Dog labo1 = new Dog();
     }
 }
 
@@ -12,7 +16,7 @@ class Animal {
     }
 
     void bark() {
-        System.out.println("barks");
+        System.out.println("bhu bhu");
     }
 }
 
