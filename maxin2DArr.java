@@ -15,10 +15,10 @@ public class maxin2DArr {
 
     public static int max(int[][] arr){
         int maximum = Integer.MIN_VALUE;
-        for (int row = 0; row < arr.length; row++) {
-            for(int col = 0 ; col < arr[row].length;col++){
-                if(arr[row][col] > maximum){
-                    maximum = arr[row][col];
+        for (int[] ints : arr){
+            for(int anInts : ints){
+                if(anInts > maximum){
+                    maximum = anInts;
                 
                 }
             }
