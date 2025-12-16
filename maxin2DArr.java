@@ -16,9 +16,9 @@ public class maxin2DArr {
     public static int max(int[][] arr){
         int maximum = Integer.MIN_VALUE;
         for (int[] ints : arr){
-            for(int anInts : ints){
-                if(anInts > maximum){
-                    maximum = anInts;
+            for(int element : ints){
+                if(element > maximum){
+                    maximum = element;
                 
                 }
             }
