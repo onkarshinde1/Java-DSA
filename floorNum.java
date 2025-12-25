@@ -1,19 +1,19 @@
-public class cellingNum {
+public class floorNum {
 
-    // celling number => the imidiate greater number after the target elem
+    // floor number => the imidiate smaller number before the target elem
     public static void main(String[] args) {
         int[] arr = {-20, -15, -8, -3, 0, 4, 9, 15, 22, 30 };
-        int ans = celling(arr, 45);
+        int ans = floor(arr, -45);
         System.out.println(ans);
     }
 
-    public static int celling(int[] arr ,int target){
+    public static int floor(int[] arr ,int target){
         
         int start = 0;
         int end = arr.length-1;
-        //if the target element is greater than the gretest number in array it should return the -1
+        //if the target element is smaller than the smallest number in array it should return the -1
         // boundry condition
-        if(target > end){
+        if(target < start){
             return -1;
         }
 
@@ -27,6 +27,6 @@ public class cellingNum {
             }
 
         }
-        return start;
+        return end;
     }
 }
