@@ -1,8 +1,8 @@
 public class cellingNum {
 
-    // celling number => the imidiate greater number after the target elem
+    // celling number => the imidiate greater number after the target elem   
     public static void main(String[] args) {
-        int[] arr = {-20, -15, -8, -3, 0, 4, 9, 15, 22, 30 };
+        int[] arr = {-20, -15, -8, -3, 0, 4, 9, 17, 22, 30 };
         int ans = celling(arr, 45);
         System.out.println(ans);
     }
