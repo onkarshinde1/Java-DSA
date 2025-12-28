@@ -2,7 +2,8 @@ public class floorNum {
 
     // floor number => the imidiate smaller number before the target elem
     public static void main(String[] args) {
-        int[] arr = {-20, -15, -8, -3, 0, 4, 9, 15, 22, 30 };
+       int[] arr = {-45, -32, -18, -10, -3, 0, 4, 7, 12, 18, 23, 29, 35, 41, 56, 63, 71, 84, 92, 105};
+
         int ans = floor(arr, -45);
         System.out.println(ans);
     }
