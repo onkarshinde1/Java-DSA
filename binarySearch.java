@@ -7,8 +7,8 @@ public class binarySearch {
         while (start <= end) {
             int mid = (start + end) / 2;
 
-            if (arr[mid] == key) {
-                return mid;
+            if (arr[mid +1 ] == key) {
+                return mid + 1;
             }
             if (arr[mid] < key) {
                 start = mid + 1;
@@ -20,8 +20,8 @@ public class binarySearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 11, 22, 33, 44, 55, 66, 77, 88, 99 };
-        int key = 552;
+        int arr[] = { 4,5,6,7,0,1,2,3};
+        int key = 2;
         System.out.println("the element is found at index "+ findElem(arr, key));
     }
 }
